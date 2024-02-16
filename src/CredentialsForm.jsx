@@ -28,7 +28,6 @@ export default function CredentialsForm() {
         }
       );
       const parsedResponse = await response.json();
-      console.log(parsedResponse);
       setApiToken(parsedResponse.token);
     } catch (err) {
       console.log(err);
